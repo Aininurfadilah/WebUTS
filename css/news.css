@@ -1,27 +1,21 @@
-body{
-    position: relative;
-    width: 1000px;
-    height: 100%;
-    background: #FFFFFF;
-}
+@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js);
+@import url(https://use.fontawesome.com/releases/v5.7.2/css/all.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js);
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css);
 
-.logo{
-    position: fixed;
-    left: 3.47%;
-    right: 92.22%;
-    top: 0.95%;
-    margin-bottom: 96.21%;
-    width: 50%;
-}
-
+body {
+    background-color: #ffffff;
+    font-family: 'Calibri', sans-serif !important
+} 
 a{
     text-decoration: none;
 }
 .logo h1{
-    position: fixed;
+    position: absolute;
     width: 300px;
     height: 24px;
-    left: 200px;
+    left: 150px;
     top: 27px;
 
     font-family: 'Open Sans';
@@ -34,7 +28,7 @@ a{
 }
 
 .profil{
-    position: fixed;
+    position: absolute;
     width: 60px;
     height: 24px;
     left: 1347px;
@@ -50,7 +44,7 @@ a{
 }
 
 .tagihan{
-    position: fixed;
+    position: absolute;
     width: 70px;
     height: 24px;
     left: 1248px;
@@ -64,10 +58,65 @@ a{
     color: #3159C2;
 }
 
+.banner img{
+    width: 1300px;
+    height: 300px;
+    margin-left: 70px;
+    margin-top: 120px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    border-radius: 35px;
+}
+.mt-100{ 
+   margin-top:100px;
+}
+.mb-100{
+   margin-bottom:100px;
+}
+.card {
+   position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: rgba(49, 128, 247, 0.521);
+   background-clip: border-box;
+   border: 0px solid transparent;
+   border-radius: 0px;
+}
 
-footer{
-    font-family: 'Poppins', sans-serif;
-    background-color: #3159C2;
-    color: white;
-    width: 1400px;
- }
+.card-body {
+   -webkit-box-flex: 1;
+   -ms-flex: 1 1 auto;
+   flex: 1 1 auto;
+   padding: 1.25rem;
+}
+
+.card .card-title {
+   position: relative;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+ul.list-style-none li {
+   list-style: none;
+}
+
+ul.list-style-none li a {
+   color: #000000;
+   padding: 8px 0px;
+   display: block;
+   text-decoration: none;
+}
+
+.m-t-5 {
+   margin-top: 5px;
+}
+
+.w-30px {
+   width: 30px;
+}
