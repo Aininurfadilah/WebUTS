@@ -6,65 +6,13 @@
 
 body {
     background-color: #ffffff;
-    font-family: 'Calibri', sans-serif !important
+    font-family: 'Calibri', sans-serif;
+    padding: 0;
+    margin :0;
 } 
+
 a{
     text-decoration: none;
-}
-.logo h1{
-    position: absolute;
-    width: 300px;
-    height: 24px;
-    left: 150px;
-    top: 27px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 30px;
-    /* identical to box height, or 118% */
-    color: #3159C2;
-}
-
-.profil{
-    position: absolute;
-    width: 60px;
-    height: 24px;
-    left: 1347px;
-    top: 28px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 24px;
-    color: #3159C2;
-    
-}
-
-.tagihan{
-    position: absolute;
-    width: 70px;
-    height: 24px;
-    left: 1248px;
-    top: 28px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 24px;
-    color: #3159C2;
-}
-
-.banner img{
-    width: 1300px;
-    height: 300px;
-    margin-left: 70px;
-    margin-top: 120px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    border-radius: 35px;
 }
 .mt-100{ 
    margin-top:100px;

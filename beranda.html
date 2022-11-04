@@ -1,125 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Informasi Perumahan</title>
-    <link rel="stylesheet" href="css/beranda.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/beranda.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="6cf840b1-2824-4046-adb9-d74aff907c1b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  <title>Sistem Informasi Perumahan</title>
 </head>
 <body>
-    <div class="logo">
-        <img src="img/logo.png"/> 
-        <h1>Cluster Maul Hill</h1>
-    </div>
-    <div class="top"> 
-        <a class="tagihan" href="">Tagihan</a>
-        <a class="profil" href="">Profil</a>
-    </div>
-    <div class="banner">
-        <img src="img/rumah1.png" />
+  <header>
+    <li><img class="logo" src="img/logo.png" alt="logo"></li>
+    <li><p class="nmlogo">Cluster Maul Hill</p></li>
+    <li><img class="rcp "src="img/receipt.png"><a class="headnav" href="#">Tagihan</a></li>
+    <li><img class="user"src="img/user.png"><a class="headnav" onclick="toggleMenu()" >Profile</a></li>
+    
+    <div class="submenu-wrapper" id="subMenu">
+        <div class="submenu">
+            <div class="user-info">
+                <h2>Aditya Maulana</h2></div><hr/>
+                <h2>No Rumah A-12</h2>
+            </div>
+        </div>
+    <script>
+        let subMenu=document.getElementById("subMenu");
 
-        <div class="row d-flex justify-content-center mt-100 mb-100">
-                        
-                                  
-            <div class="col-lg-6">
-               
-               <div class="card">
-                   <div class="card-body text-center">
-                       <h4 class="card-title m-b-0">News Updates</h4>
+        function toggleMenu(){
+            submenu.classList.toggle("openMenu");
+        }
+    </script>
+  </header>
+  <div class="banner">
+    <li style="list-style: none;"><img class="bn"src="img/rumah1.png"></li>
+  </div>
+  <div class="row d-flex justify-content-center mt-100 mb-100">                       
+    <div class="col-lg-6">
+       
+       <div class="card">
+           <div class="card-body text-center">
+               <h2 class="card-title m-b-0">Daily News Updates</h2>
+               <h4 class="card-title m-b-0">Cluster Maul Hill</h4>
+           </div>
+           <ul class="list-style-none">
+               <li class="d-flex no-block card-body border-top">
+                <i class="fa fa-plus w-30px m-t-5"></i>
+                   <div>
+                       <p class="m-b-0 font-medium p-0" data-abc="true">Peluncuran Tipe Rumah Baru di Cluster Maul Hill</p>
+                       <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam doloremque, cupiditate corporis voluptatum mollitia veritatis temporibus placeat voluptatibus unde, fugiat impedit velit nisi in. Maxime facere quasi eligendi odio!</span>
                    </div>
-                   <ul class="list-style-none">
-                       <li class="d-flex no-block card-body">
-                           <i class="fa fa-check-circle w-30px m-t-5"></i>
-                           <div>
-                               <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Version 2.5 released</a>
-                               <span class="text-muted">A new version 2.5 has been released. </span>
-                           </div>
-                           <div class="ml-auto">
-                               <div class="tetx-right">
-                                   <h5 class="text-muted m-b-0">26</h5>
-                                   <span class="text-muted font-16">FEB</span>
-                               </div>
-                           </div>
-                       </li>
-                       <li class="d-flex no-block card-body border-top">
-                           <i class="fa fa-gift w-30px m-t-5"></i>
-                           <div>
-                               <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Congratulation to AAA For new investment</a>
-                               <span class="text-muted">AAA has invested $2M in MMM. we are happy to working forward with AAA.</span>
-                           </div>
-                           <div class="ml-auto">
-                               <div class="tetx-right">
-                                   <h5 class="text-muted m-b-0">11</h5>
-                                   <span class="text-muted font-16">MAR</span>
-                               </div>
-                           </div>
-                       </li>
-                       <li class="d-flex no-block card-body border-top">
-                           <i class="fa fa-plus w-30px m-t-5"></i>
-                           <div>
-                               <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Hiring Android Developers</a>
-                               <span class="text-muted">We are hiring android developers to expend our mobile development team.</span>
-                           </div>
-                           <div class="ml-auto">
-                               <div class="tetx-right">
-                                   <h5 class="text-muted m-b-0">19</h5>
-                                   <span class="text-muted font-16">APR</span>
-                               </div>
-                           </div>
-                       </li>
-                       <li class="d-flex no-block card-body border-top">
-                           <i class="fa fa-leaf w-30px m-t-5"></i>
-                           <div>
-                               <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Anounced New CEO</a>
-                               <span class="text-muted">We announced John kendey as new CEO of the company.</span>
-                           </div>
-                           <div class="ml-auto">
-                               <div class="tetx-right">
-                                   <h5 class="text-muted m-b-0">20</h5>
-                                   <span class="text-muted font-16">JUN</span>
-                               </div>
-                           </div>
-                       </li>
-                       <li class="d-flex no-block card-body border-top">
-                           <i class="fa fa-question-circle w-30px m-t-5"></i>
-                           <div>
-                               <a href="#" class="m-b-0 font-medium p-0" data-abc="true">New Guidelines to Employees</a>
-                               <span class="text-muted">We have realeased new guidelines to all employees</span>
-                           </div>
-                           <div class="ml-auto">
-                               <div class="tetx-right">
-                                   <h5 class="text-muted m-b-0">15</h5>
-                                   <span class="text-muted font-16">AUG</span>
-                               </div>
-                           </div>
-                       </li>
-                       <li class="d-flex no-block card-body border-top">
-                           <i class="fa fa-plus w-30px m-t-5"></i>
-                           <div>
-                               <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Android App version 5.1 released</a>
-                               <span class="text-muted">We have realeased android app version 5.1. update now.</span>
-                           </div>
-                           <div class="ml-auto">
-                               <div class="tetx-right">
-                                   <h5 class="text-muted m-b-0">19</h5>
-                                   <span class="text-muted font-16">OCT</span>
-                               </div>
-                           </div>
-                       </li>
-                   </ul>
-               </div>
-
-           </div>
-           </div>
-           
-           
-
-        <footer>
-            <p align="center">Cluster Maul Hill</p>
-          </footer>
-
+                   <div class="ml-auto">
+                       <div class="tetx-right">
+                           <h5 class="text-muted m-b-0">11</h5>
+                           <span class="text-muted font-16">OCT</span>
+                       </div>
+                   </div>
+               </li>
+               <li class="d-flex no-block card-body border-top">
+                   <i class="fa fa-plus w-30px m-t-5"></i>
+                   <div>
+                       <p class="m-b-0 font-medium p-0" data-abc="true">Pembangunan Jalan baru untuk ke Taman Perumahan</p>
+                       <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, dolore. Ea eius, sed sapiente a doloribus, temporibus ad quae labore excepturi ipsa, delectus minus praesentium fugit quas unde similique natus?</span>
+                   </div>
+                   <div class="ml-auto">
+                       <div class="tetx-right">
+                           <h5 class="text-muted m-b-0">19</h5>
+                           <span class="text-muted font-16">oct</span>
+                       </div>
+                   </div>
+               </li>
+               <li class="d-flex no-block card-body border-top">
+                <i class="fa fa-plus w-30px m-t-5"></i>
+                   <div>
+                       <p class="m-b-0 font-medium p-0" data-abc="true">Reminder Pembayaran Tagihan Bulanan!</p>
+                       <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugit aperiam praesentium quo odio dicta vel fuga laborum deleniti debitis! Nulla inventore fuga exercitationem illo veniam deserunt similique placeat officiis?</span>
+                   </div>
+                   <div class="ml-auto">
+                       <div class="tetx-right">
+                           <h5 class="text-muted m-b-0">01</h5>
+                           <span class="text-muted font-16">NOV</span>
+                       </div>
+                   </div>
+               </li>
+               <li class="d-flex no-block card-body border-top">
+                   <i class="fa fa-plus w-30px m-t-5"></i>
+                   <div>
+                       <p class="m-b-0 font-medium p-0" data-abc="true">Anounced: Kerja Bakti</p>
+                       <span class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates cupiditate ex qui, inventore, deleniti, culpa sed consequatur minima esse distinctio vel illum. Vero saepe quidem molestias velit voluptas, corrupti reprehenderit.</span>
+                   </div>
+                   <div class="ml-auto">
+                       <div class="tetx-right">
+                           <h5 class="text-muted m-b-0">04</h5>
+                           <span class="text-muted font-16">NOV</span>
+                       </div>
+                   </div>
+               </li>
+           </ul>
+       </div>
+  
+   </div>
+   </div>
 </body>
+
 </html>

@@ -1,156 +1,87 @@
-body{
-    position: relative;
-    width: 1000px;
-    height: 100%;
-    background: #FFFFFF;
-}
-
-.logo{
-    position: absolute;
-    left: 3.47%;
-    right: 92.22%;
-    top: 0.95%;
-    bottom: 96.21%;
-    width: 50%;
-}
-
-footer{
-   font-family: 'Poppins', sans-serif;
-   background-color: #3159C2;
-   color: white;
-   width: 1400px;
-}
-a{
-    text-decoration: none;
-}
-.logo h1{
-    position: absolute;
-    width: 300px;
-    height: 24px;
-    left: 150px;
-    top: 27px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 30px;
-    /* identical to box height, or 118% */
-    color: #3159C2;
-}
-
-.profil{
-    position: absolute;
-    width: 60px;
-    height: 24px;
-    left: 1347px;
-    top: 28px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 24px;
-    color: #3159C2;
-    
-}
-
-.tagihan{
-    position: absolute;
-    width: 70px;
-    height: 24px;
-    left: 1248px;
-    top: 28px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 24px;
-    color: #3159C2;
-}
-
-.banner img{
-    width: 1300px;
-    height: 300px;
-    margin-left: 70px;
-    margin-top: 120px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    border-radius: 35px;
-}
-
 @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
 @import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js);
 @import url(https://use.fontawesome.com/releases/v5.7.2/css/all.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js);
 @import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css);
-
-body {
-    background-color: #ffffff;
-    font-family: 'Calibri', sans-serif !important
-} 
-
-.mt-100{ 
-   margin-top:100px;
-}
-.mb-100{
-   margin-bottom:100px;
-}
-.card {
-   position: relative;
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-   -ms-flex-direction: column;
-   flex-direction: column;
-   min-width: 0;
-   word-wrap: break-word;
-   background-color: rgba(0, 81, 255, 0.733);
-   background-clip: border-box;
-   border: 0px solid transparent;
-   border-radius: 0px;
+body{
+   background-color:aliceblue ;
+   
 }
 
-.card-body {
-   -webkit-box-flex: 1;
-   -ms-flex: 1 1 auto;
-   flex: 1 1 auto;
-   padding: 1.25rem;
+header{
+   font-family: 'Open sans';
+   background-color: #f8f8f8;
+   padding: 30px;
+   box-shadow:0 0 3px  #000000;
+   text-align: right;
+   font-size: 22pt;
 }
 
-.card .card-title {
-   position: relative;
-   font-weight: 600;
-   margin-bottom: 10px;
+header li{
+   display:inline;
+   padding: 30px;
 }
 
-ul.list-style-none li {
-   list-style: none;
-}
-
-ul.list-style-none li a {
-   color: #673AB7;
-   padding: 8px 0px;
-   display: block;
+header .headnav{
    text-decoration: none;
+   color:#3159C2;
+  
 }
 
-.m-t-5 {
-   margin-top: 5px;
+header .headnav:hover{
+   color:rgb(253, 143, 0);
+}
+.banner li .bn{
+   width: 100%;
+   height: 430px;
 }
 
-.w-30px {
-   width: 30px;
+header li .logo{
+   float: left;
+   width: 90px;
+   margin-top: -10px;
+}
+header li .nmlogo{
+   float :left;
+   padding: 15px;
+   font-family:'Open sans';
+   color: #3159C2;
+  margin-top: -11px;
 }
 
+header li .rcp{
+   width: 40px;
+   padding: 5px;
+}
+header li .user{
+   width: 40px;
+   padding: 5px;
+}
 
-body {
-    background-color: #ffffff;
-    font-family: 'Calibri', sans-serif !important
-} 
+.submenu-wrapper{
+   position: absolute;
+   top:10%;
+   right: 0%;
+   max-height: 0;
+   overflow:visible;
+   transition: max-height 0.5s;
+}
 
+.submenu-wrapper .openMenu{
+   max-height: 400px;
+}
+
+.submenu{
+   background-color: antiquewhite;
+   border-radius: 20px;
+   padding: 16px;
+   margin: 10px;
+}
+
+.user-info h2{
+   font-weight: 500;
+   
+}
 .mt-100{ 
    margin-top:100px;
 }
@@ -168,7 +99,7 @@ body {
    flex-direction: column;
    min-width: 0;
    word-wrap: break-word;
-   background-color: rgba(4, 142, 255, 0.514);
+   background-color: rgba(49, 128, 247, 0.521);
    background-clip: border-box;
    border: 0px solid transparent;
    border-radius: 0px;
@@ -179,12 +110,14 @@ body {
    -ms-flex: 1 1 auto;
    flex: 1 1 auto;
    padding: 1.25rem;
+   font-family: 'Open sans';
 }
 
 .card .card-title {
    position: relative;
    font-weight: 600;
    margin-bottom: 10px;
+   font-family: 'Open sans';
 }
 
 ul.list-style-none li {
@@ -197,7 +130,11 @@ ul.list-style-none li a {
    display: block;
    text-decoration: none;
 }
-
+ul.list-style-none li p{
+   list-style: none;
+   color:#9c0000;
+   font-weight: bold;
+}
 .m-t-5 {
    margin-top: 5px;
 }
